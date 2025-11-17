@@ -18,43 +18,114 @@
 
   <!-- ---Aqui inicia el navbar--- -->
   <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container">
+    <div class="container fluid">
 
       <a class="navbar-brand d-flex align-items-center gap-1" href="#">
         <i class="fa-brands fa-instagram"></i>
         <span>Instagram</span>
       </a>
+      <!-- ---botón de hamburguesa--- -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              <span class="btn btn-success">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Create a new post
-              </span>
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                          placeholder="Add the caption here"></textarea>
+                      </div>
+                      <div class="d-flex">
+                        <button class="btn btn-light">
+                          <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="btn btn-light">
+                          <i class="fa-solid fa-location-crosshairs"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Menu
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="dropdown">
+
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu">
+
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                  <hr>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </div>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
           </li>
+
+
+
         </ul>
+
       </div>
     </div>
+
+
+
   </nav>
+
   <!-- ---Aquí termina el navbar--- -->
 
-  <!-- ---Empieza el nav tabs--- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ---Empieza el nav tabs (cuadraditos)--- -->
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
@@ -68,94 +139,100 @@
 
 
 
-    <!-- ---en este div van las fotos en mosaico --- -->
-    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <img src="https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg"
-            class="img-fluid">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3NodXR0ZXJzdG9jay0yMjc4Nzc2MTg3LWhlcm8uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
-            class="img-fluid">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <img src="https://images.pexels.com/photos/247851/pexels-photo-247851.jpeg"
-            class="img-fluid">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <img src="https://images.pexels.com/photos/2176593/pexels-photo-2176593.jpeg"
-            class="img-fluid">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg"
-            class="img-fluid">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <img src="https://images.pexels.com/photos/1639813/pexels-photo-1639813.jpeg"
-            class="img-fluid">
-        </div>
-
-
-
-
-
-
-
+  <!-- ---en este div van las fotos en mosaico --- -->
+  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <img src="https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg"
+          class="img-fluid">
       </div>
-      <!---aqui es la apertura del div--->
-      esta es la pestaña home
-
-    </div> <!-- este es el cierre del div-->
-
-    <!-- ---en este div van las fotos en feed--- -->
-
-    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-      <div class="container">
-        <div class="card">
-          <img src="https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg" class="card-img-top" >
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-        <div class="card">
-          <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3NodXR0ZXJzdG9jay0yMjc4Nzc2MTg3LWhlcm8uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0=" class="card-img-top" >
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-        <div class="card">
-          <img src="https://images.pexels.com/photos/247851/pexels-photo-247851.jpeg" class="card-img-top" >
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-        <div class="card">
-          <img src="https://images.pexels.com/photos/2176593/pexels-photo-2176593.jpeg" class="card-img-top" >
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-        <div class="card">
-          <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg" class="card-img-top" >
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-        <div class="card">
-          <img src="https://images.pexels.com/photos/1639813/pexels-photo-1639813.jpeg" class="card-img-top" >
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-          </div>
-        </div>
-
-
-
-
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3NodXR0ZXJzdG9jay0yMjc4Nzc2MTg3LWhlcm8uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+          class="img-fluid">
       </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <img src="https://images.pexels.com/photos/247851/pexels-photo-247851.jpeg" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <img src="https://images.pexels.com/photos/2176593/pexels-photo-2176593.jpeg" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <img src="https://images.pexels.com/photos/1639813/pexels-photo-1639813.jpeg" class="img-fluid">
+      </div>
+
+
 
 
 
 
 
     </div>
+    <!---aqui es la apertura del div--->
+    esta es la pestaña home
+
+  </div> <!-- este es el cierre del div-->
+
+  <!-- ---en este div van las fotos en feed--- -->
+
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <div class="container">
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+          <div class="card">
+            <img
+              src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3NodXR0ZXJzdG9jay0yMjc4Nzc2MTg3LWhlcm8uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+              class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              <div class="card">
+                <img src="https://images.pexels.com/photos/247851/pexels-photo-247851.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s
+                  <div class="card">
+                    <img src="https://images.pexels.com/photos/2176593/pexels-photo-2176593.jpeg" class="card-img-top">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card’s
+                      <div class="card">
+                        <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg"
+                          class="card-img-top">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card’s
+                          <div class="card">
+                            <img src="https://images.pexels.com/photos/1639813/pexels-photo-1639813.jpeg"
+                              class="card-img-top">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card’s
+                                content.</p>
+                            </div>
+                          </div>
 
 
-    <!-- --- Todo lo relacionado con Javascript se debe colocar al final del body--- -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+
+
+                        </div>
+
+
+
+
+
+                      </div>
+
+
+                      <!-- --- Todo lo relacionado con Javascript se debe colocar al final del body--- -->
+                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                        crossorigin="anonymous"></script>
 </body>
 
 </html>
